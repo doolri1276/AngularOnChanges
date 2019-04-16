@@ -3,3 +3,5 @@ myNum : <input type="number" [(ngModel)]="numVal"> <br>
 myStr : <input type="text" [(ngModel)]="strVal"> <br>
 temp.d : <input type="number" [(ngModel)]="temp.id"> <br>
 temp.content : <input type="text" [(ngModel)]="temp.content"> <br>
+<prop-input-bind [myNum] = "numVal" [myStr] = "strVal" [tempData] = "temp"></prop-input-bind>
+<none-input-bind></none-input-bind>
