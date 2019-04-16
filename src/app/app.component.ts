@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TemplateData } from '@angular/core/src/view';
+import { TempData } from './temp-data/temp-data.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'onchanges';
+  numVal: number;
+  strVal: string;
+  temp: TempData;
+
+  constructor(){
+    this.numVal = 1;
+    this.strVal = 'test';
+    this.temp = new TempData(10, 'sample data');
+  }
 }
